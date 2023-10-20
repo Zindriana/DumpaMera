@@ -7,8 +7,11 @@ import TruckPackage.TruckType;
 
 public class MediumTerminal extends Terminal{
     Output out = new Output();
-    public MediumTerminal(String name, int weightCapacity, TruckType primary, TruckType secondary) {
-        super(name, weightCapacity, TruckType.lightTruck, secondary);
+    TruckType primaryTruckType = TruckType.lättLastbil;
+
+    //Konstruktor för terminal, primary kan tas bort
+    public MediumTerminal(String name, int weightCapacity, TruckType secondary) {
+        super(name, weightCapacity, secondary);
     }
 
     @Override

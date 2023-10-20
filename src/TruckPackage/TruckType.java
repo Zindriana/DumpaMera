@@ -1,5 +1,5 @@
 package TruckPackage;
 
 public enum TruckType {
-    van, lightTruck, heavyTruck
+    skåpbil, lättLastbil, tungLastbil
 }

@@ -2,7 +2,7 @@ package TruckPackage;
 
 public class LightTruck extends Truck {
 
-    TruckType type = TruckType.lightTruck;
+    TruckType type = TruckType.lättLastbil;
     public LightTruck(int weight) {
         super(weight);
 

@@ -7,8 +7,11 @@ import BaseFunctions.Output;
 
 public class LightTerminal extends Terminal{
     Output out = new Output();
-    public LightTerminal(String name, int weightCapacity, TruckType primary, TruckType secondary) {
-        super(name, weightCapacity, TruckType.van, secondary);
+    TruckType primaryTruckType = TruckType.skåpbil;
+
+    //Konstruktor för terminal, primary kan tas bort
+    public LightTerminal(String name, int weightCapacity, TruckType secondary) {
+        super(name, weightCapacity, secondary);
     }
 
     @Override

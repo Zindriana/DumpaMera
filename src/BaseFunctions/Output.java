@@ -1,5 +1,6 @@
 package BaseFunctions;
 
+import TerminalPackage.Terminal;
 import TruckPackage.TruckType;
 
 public class Output {
@@ -39,5 +40,15 @@ public class Output {
 
     public void goodBye(){
         System.out.println("\n Hej då och välkommen åter!");
+    }
+
+    public void terminalInformation(){System.out.println(" \n Följande lastbilar står just nu parkerade terminalerna: ");}
+
+    public void confirmTruck(Terminal[] terminals, int i){
+        System.out.println(" - " + terminals[i].getTerminalSlot()[0].toString() + " på " + terminals[i].getName());
+    }
+
+    public void newLine(){
+        System.out.println("\n");
     }
 }

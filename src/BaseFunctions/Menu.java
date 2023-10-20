@@ -23,7 +23,9 @@ public class Menu {
                     manager.addTruckToTerminal(chosenType, chosenWeight);
                     mainMenu(manager);
                     break;
-            default: out.goodBye(); break;
+            case 3 : out.goodBye(); break;
+            default: out.illegalChoice();  mainMenu(manager);break;
+            //default "loopar" metoden tills användaren ger ett korrekt värde
         }
     }
 }
